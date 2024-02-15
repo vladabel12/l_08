@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    word-break: break-word;
 }
 a{
     text-decoration: none;
@@ -21,27 +22,27 @@ html, body{
     justify-content: space-between;
     gap: 55px;
 }
-.zero-header{
+.number{
     margin-top: 100px;
     color: rgb(22, 21, 21);
     font-family: League Spartan;
     font-size: 24px;
     font-weight: 300;
     line-height: 186%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: left;
     margin-bottom: 53px;
 }
-.first-header{
+.main-header{
     color: rgb(39, 39, 39);
     font-family: League Spartan;
     font-size: 250px;
     font-weight: 300;
     line-height: 230px;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: left;
 }
-.second-header{
+.description-header{
     margin-top: 43px;
     margin-bottom: 61px;
     max-width: 575px;
@@ -50,7 +51,7 @@ html, body{
     font-size: 32px;
     font-weight: 300;
     line-height: 155%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: left;
 }
 .button{
@@ -67,11 +68,11 @@ html, body{
     font-size: 32px;
     font-weight: 300;
     line-height: 29px;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: left;
+    transition: .2s all ease-in-out;
 }
 .header-link:hover {
-    transition: .2s all ease-in-out;
     transform: translateY(-5px);
     transform: scale(1.1);
 }
@@ -85,8 +86,11 @@ html, body{
     font-size: 32px;
     font-weight: 300; 
     line-height: 186%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: center;
+}
+.representation-image{
+    max-width: 100%;
 }
 .models{
     background: rgb(255, 255, 255);
@@ -102,7 +106,7 @@ html, body{
     font-size: 24px;
     font-weight: 300;
     line-height: 186%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: center;
 }
 .main2{
@@ -111,7 +115,7 @@ html, body{
     font-size: 72px;
     font-weight: 400;
     line-height: 112.5%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: center;
     margin-bottom: 84px;
 }
@@ -121,12 +125,12 @@ html, body{
     margin-bottom: 67px;
 }
 .image1{
-    max-width: 417px;
+    max-width: 100%;
     background: rgb(248, 248, 248);
     padding: 110px 60px 110px 71px;
+    transition: .2s all ease-in-out;
 }
 .image1:hover{
-    transition: .2s all ease-in-out;
     transform: translateY(-10px);
     transform: scale(1.1);
 }
@@ -136,7 +140,7 @@ html, body{
     font-size: 32px;
     font-weight: 400;
     line-height: 29px;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: center;
     margin-bottom: 17px;
 }
@@ -147,7 +151,7 @@ html, body{
     font-size: 32px;
     font-weight: 300;
     line-height: 155%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: center;
     margin-bottom: 85px;
 }
@@ -157,12 +161,12 @@ html, body{
     margin-bottom: 67px;
 }
 .image2{
-    max-width: 496px;
+    max-width: 100%;
     background: rgb(248, 248, 248);
     padding: 65px 2px;
+    transition: .2s all ease-in-out;
 }
 .image2:hover{
-    transition: .2s all ease-in-out;
     transform: translateY(-10px);
     transform: scale(1.1);
 }
@@ -172,7 +176,7 @@ html, body{
     font-size: 32px;
     font-weight: 400;
     line-height: 29px;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: center;
     margin-bottom: 17px;
 }
@@ -184,7 +188,7 @@ html, body{
     font-size: 32px;
     font-weight: 300;
     line-height: 155%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: center;
     margin-bottom: 59px;
 }
@@ -199,7 +203,7 @@ span {
     font-size: 32px;
     font-weight: 400;
     line-height: 186%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: center;
     text-transform: capitalize;
 }
@@ -221,7 +225,7 @@ span::before {
     font-size: 24px;
     font-weight: 500;
     line-height: 170%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: center;
     margin-bottom: 142px;
 }
@@ -233,9 +237,8 @@ span::before {
     .representation, .header, .models, .representation-image{
         padding: 0px 10px;
         display: inline-block;
-        justify-content: center;
     }
-    .first-header{
-        font-size: 180px;
+    .main-header{
+        font-size: 170px;
     }
 }
